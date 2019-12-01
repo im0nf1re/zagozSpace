@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'PressStart2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pressstart2p/v8/e3t4euO8T-267oIAQAu6jDQyK3nVivM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.game-field {
+	margin: auto;
+	background: url("img/335412-sepik.jpg");
+	background-size: 100% 100%;
+	display: block;
+}
+
+.menu {
+	margin: auto;
+	width: 1280px;
+	height: 720px;
+	font-family: 'PressStart2P';
+	color: white;
+	font-size: 60px;
+	background: url("img/menuBackground.png");
+	position: relative;
+	cursor:  url(img/cursor.png), auto;
+}
+
+.buttons {
+	text-align: center;
+	width: 640px;
+	margin-left: 450px;
+	padding-top: 175px;
+}
+
+.start {
+	font-size: 90px;
+}
+
+.btn {
+	margin-bottom: 70px;
+}
+
+.btn:hover {
+	color: grey;
+}
+
+@keyframes zagozRotate {
+	from {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(15deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+
+	75% {
+		transform: rotate(-15deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.menu-face {
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 200px;
+	left: 40px;
+	transform-origin: center;
+	animation-name: zagozRotate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.settings-window {
+	width: 640px;
+	height: 460px;
+	position: absolute;
+	top: 75px;
+	left: 300px;
+	background: black;
+	padding: 20px;
+	border: 5px solid white;
+}
+
+.op-full:hover,
+.op-boss:hover {
+	color: green;
+}
+
+
+
